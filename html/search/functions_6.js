@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['if_0',['if',['../_program_8cs.html#a376d6d780d4acd45956b9c3f3e4e5922',1,'Program.cs']]],
+  ['isdead_1',['IsDead',['../interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature.html#a4f90dcebd8255ad43b50b31c5266667e',1,'Mandatory2DGameFramework.Interface.ICreature.IsDead()'],['../class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_animals.html#a3414fe462e2b211faa4b3390c3c82034',1,'Mandatory2DGameFramework.model.Cretures.Animals.IsDead()'],['../class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army.html#a5ae98a2c7c181d487b357844a1ebd3a4',1,'Mandatory2DGameFramework.model.Cretures.Army.IsDead()'],['../class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_civilian.html#aa594b9c2e51f75867c174f009e709c54',1,'Mandatory2DGameFramework.model.Cretures.Civilian.IsDead()'],['../class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_enemy.html#a46072b4e90a20f59860dcdd1428c22b4',1,'Mandatory2DGameFramework.model.Cretures.Enemy.IsDead()']]]
+];

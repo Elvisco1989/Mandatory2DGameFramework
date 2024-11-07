@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GameConfiguration>
+	<World>
+		<MaxX>50</MaxX>
+		<MaxY>50</MaxY>
+	</World>
+	<Creatures>
+		<Creature>
+			<Name>Rambo</Name>
+			<Hitpoints>100</Hitpoints>
+			<AttackItem>
+				<Name>Gun</Name>
+				<Hit>10</Hit>
+				<Range>10</Range>
+			</AttackItem>
+			<AttackItem>
+				<Name>Knife</Name>
+				<Hit>5</Hit>
+				<Range>1</Range>
+			</AttackItem>
+			<DefenceItem>
+				<Name>Shiel</Name>
+				<Defence>5</Defence>
+				
+			</DefenceItem>
+		</Creature>
+		<Creature>
+			<Name>Chuck Norris</Name>
+			<Hitpoints>1000</Hitpoints>
+			<AttackItem>
+				<Name>Gun</Name>
+				<Hit>100</Hit>
+				<Range>10</Range>
+			</AttackItem>
+			<DefenceItem>
+				<Name>Shiel</Name>
+				<Defence>50</Defence>
+			</DefenceItem>
+		</Creature>
+	</Creatures>
+</GameConfiguration> 

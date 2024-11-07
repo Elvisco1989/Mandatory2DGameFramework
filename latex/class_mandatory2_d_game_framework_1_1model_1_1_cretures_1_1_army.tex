@@ -1,0 +1,300 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army Class Reference}
+\hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{}\label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+
+
+Represents an \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} creature that can fight, move, and manage its inventory of weapons and defense items. Implements ICreature and IFighter interfaces.  
+
+
+Inheritance diagram for Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.772152cm]{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab5a1a2c8ce8b6ee90883401b62a6be4e}{Army}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} class with default values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_aceec6300c31c3b3187ee6201605c1bd0}{Army}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_position}{IPosition}} \mbox{\hyperlink{_program_8cs_a5722f69a22ad5632d943ba30f25a40e7}{position}})
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} class with a specified position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a6eeb83c629f84cbed0bca6b2e56176d2}{Loot}} (\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em Allows the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} to loot a specified World\+Object and add it to its inventory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_af2004cc6233ee36b90a8b019ad572808}{Move}} (char input)
+\begin{DoxyCompactList}\small\item\em Moves the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} to a new position based on the input character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab691f931bea04cf99d387b3a8dc87497}{Display\+Weapons}} ()
+\begin{DoxyCompactList}\small\item\em Displays all weapons currently looted by the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a06e194c948f6a559d70a3daf7152e449}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}\textquotesingle{}s hit points and weapons. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a8925c01c5f9db9efe5a1031564db0ade}{Recieve\+Hit}} (\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_positive_1_1_positive_number}{Positive\+Number}} Damage)
+\begin{DoxyCompactList}\small\item\em Processes the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} receiving a hit, reducing HP based on the amount of damage. If Defence is equipped, it uses the Defence item to absorb part of the hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a616925c7c4c83d2a5c7ba0dbff8c58f2}{Attack\+Creature}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature}{ICreature}} creature)
+\begin{DoxyCompactList}\small\item\em Attacks another creature, dealing damage based on the equipped weapon or default damage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ac78b3173a0b8ae82cb6c0c236dfd00f0}{Attach\+Observer}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_observer}{IObserver}} observer)
+\begin{DoxyCompactList}\small\item\em Attaches an observer to the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}, allowing it to receive notifications on death. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a89f68d20fe0a27525e1499dd65f12f6f}{Detach\+Observer}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_observer}{IObserver}} observer)
+\begin{DoxyCompactList}\small\item\em Detaches an observer from the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a5ae98a2c7c181d487b357844a1ebd3a4}{Is\+Dead}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} is dead based on its Hit\+Points. If dead, notifies all observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_fighter}{Mandatory2\+DGame\+Framework.\+Interface.\+IFighter}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab459e097c52ddb4fe838a24022242e77}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_af9616ca77702c6ec73ede9bd55de0968}{Hit\+Points}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current hit points (HP) of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. If HP reaches zero, the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} is considered dead. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item}}? \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a675ed2044b8def89a651015307ccd8f2}{Attack}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Attack item equipped by the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item}}? \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab66f5d398580b0d322d99511e342f7f2}{Defence}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Defense item equipped by the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}}
+
+
+\doxysubsection{Detailed Description}
+Represents an \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} creature that can fight, move, and manage its inventory of weapons and defense items. Implements ICreature and IFighter interfaces. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab5a1a2c8ce8b6ee90883401b62a6be4e}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!Army@{Army}}
+\index{Army@{Army}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{Army()}{Army()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab5a1a2c8ce8b6ee90883401b62a6be4e} 
+Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Army (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} class with default values. 
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_aceec6300c31c3b3187ee6201605c1bd0}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!Army@{Army}}
+\index{Army@{Army}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{Army()}{Army()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_aceec6300c31c3b3187ee6201605c1bd0} 
+Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Army (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_position}{IPosition}}}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} class with a specified position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The initial position of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ac78b3173a0b8ae82cb6c0c236dfd00f0}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!AttachObserver@{AttachObserver}}
+\index{AttachObserver@{AttachObserver}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{AttachObserver()}{AttachObserver()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ac78b3173a0b8ae82cb6c0c236dfd00f0} 
+void Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Attach\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_observer}{IObserver}}}]{observer}{}\end{DoxyParamCaption})}
+
+
+
+Attaches an observer to the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}, allowing it to receive notifications on death. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to be added.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_aaeb551227a4f292c9e27a9199bbcec20}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a616925c7c4c83d2a5c7ba0dbff8c58f2}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!AttackCreature@{AttackCreature}}
+\index{AttackCreature@{AttackCreature}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{AttackCreature()}{AttackCreature()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a616925c7c4c83d2a5c7ba0dbff8c58f2} 
+void Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Attack\+Creature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature}{ICreature}}}]{creature}{}\end{DoxyParamCaption})}
+
+
+
+Attacks another creature, dealing damage based on the equipped weapon or default damage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em creature} & The creature to be attacked.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_fighter_ab5d34110418e9a49ca1d299b09faefc8}{Mandatory2\+DGame\+Framework.\+Interface.\+IFighter}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a89f68d20fe0a27525e1499dd65f12f6f}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!DetachObserver@{DetachObserver}}
+\index{DetachObserver@{DetachObserver}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{DetachObserver()}{DetachObserver()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a89f68d20fe0a27525e1499dd65f12f6f} 
+void Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Detach\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_observer}{IObserver}}}]{observer}{}\end{DoxyParamCaption})}
+
+
+
+Detaches an observer from the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to be removed.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a8e6d14096e070b97d853ad70e1f022f1}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab691f931bea04cf99d387b3a8dc87497}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!DisplayWeapons@{DisplayWeapons}}
+\index{DisplayWeapons@{DisplayWeapons}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{DisplayWeapons()}{DisplayWeapons()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab691f931bea04cf99d387b3a8dc87497} 
+void Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Display\+Weapons (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays all weapons currently looted by the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. 
+
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a02f7e46c7962ef6a353aba88850da144}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a5ae98a2c7c181d487b357844a1ebd3a4}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!IsDead@{IsDead}}
+\index{IsDead@{IsDead}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{IsDead()}{IsDead()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a5ae98a2c7c181d487b357844a1ebd3a4} 
+bool Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Is\+Dead (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} is dead based on its Hit\+Points. If dead, notifies all observers. 
+
+\begin{DoxyReturn}{Returns}
+True if the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} is dead, otherwise false.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a4f90dcebd8255ad43b50b31c5266667e}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a6eeb83c629f84cbed0bca6b2e56176d2}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!Loot@{Loot}}
+\index{Loot@{Loot}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{Loot()}{Loot()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a6eeb83c629f84cbed0bca6b2e56176d2} 
+void Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Loot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}}}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Allows the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} to loot a specified World\+Object and add it to its inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The World\+Object to be looted.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a05e12c61b78e3c0453b0dfe4bb365675}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_af2004cc6233ee36b90a8b019ad572808}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!Move@{Move}}
+\index{Move@{Move}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_af2004cc6233ee36b90a8b019ad572808} 
+void Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Move (\begin{DoxyParamCaption}\item[{char}]{input}{}\end{DoxyParamCaption})}
+
+
+
+Moves the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} to a new position based on the input character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The character input to determine the new position.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a33b24495a2a1b2e10a62811bf4d0b52d}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a8925c01c5f9db9efe5a1031564db0ade}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!RecieveHit@{RecieveHit}}
+\index{RecieveHit@{RecieveHit}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{RecieveHit()}{RecieveHit()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a8925c01c5f9db9efe5a1031564db0ade} 
+void Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Recieve\+Hit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_positive_1_1_positive_number}{Positive\+Number}}}]{Damage}{}\end{DoxyParamCaption})}
+
+
+
+Processes the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} receiving a hit, reducing HP based on the amount of damage. If Defence is equipped, it uses the Defence item to absorb part of the hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Damage} & The amount of damage as a Positive\+Number.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a9c2c431c4ee1619b722a9bcb71424f88}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a06e194c948f6a559d70a3daf7152e449}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!ToString@{ToString}}
+\index{ToString@{ToString}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a06e194c948f6a559d70a3daf7152e449} 
+override string Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}\textquotesingle{}s hit points and weapons. 
+
+\begin{DoxyReturn}{Returns}
+A string with the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}\textquotesingle{}s HP and weapons.
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a675ed2044b8def89a651015307ccd8f2}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!Attack@{Attack}}
+\index{Attack@{Attack}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{Attack}{Attack}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a675ed2044b8def89a651015307ccd8f2} 
+\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item}{Attack\+Item}}? Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Attack\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Attack item equipped by the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. 
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab66f5d398580b0d322d99511e342f7f2}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!Defence@{Defence}}
+\index{Defence@{Defence}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{Defence}{Defence}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab66f5d398580b0d322d99511e342f7f2} 
+\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item}{Defence\+Item}}? Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Defence\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Defense item equipped by the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. 
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_af9616ca77702c6ec73ede9bd55de0968}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!HitPoints@{HitPoints}}
+\index{HitPoints@{HitPoints}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{HitPoints}{HitPoints}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_af9616ca77702c6ec73ede9bd55de0968} 
+int Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Hit\+Points\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The current hit points (HP) of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. If HP reaches zero, the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army} is considered dead. 
+
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a5d24009cdcbc90ba3241b59a914e28ed}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}.
+
+\Hypertarget{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab459e097c52ddb4fe838a24022242e77}\index{Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}!Name@{Name}}
+\index{Name@{Name}!Mandatory2DGameFramework.model.Cretures.Army@{Mandatory2DGameFramework.model.Cretures.Army}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab459e097c52ddb4fe838a24022242e77} 
+string Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The name of the \doxylink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army}{Army}. 
+
+
+
+Implements \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a0dcc24678ec06af15cfdb47299614629}{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/\+Cretures/\mbox{\hyperlink{_army_8cs}{Army.\+cs}}\end{DoxyCompactItemize}

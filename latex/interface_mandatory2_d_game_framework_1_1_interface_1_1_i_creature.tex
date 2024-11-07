@@ -1,0 +1,133 @@
+\doxysection{Mandatory2\+DGame\+Framework.\+Interface.\+ICreature Interface Reference}
+\hypertarget{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature}{}\label{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature}\index{Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}}
+Inheritance diagram for Mandatory2\+DGame\+Framework.\+Interface.\+ICreature\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.848485cm]{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a33b24495a2a1b2e10a62811bf4d0b52d}{Move}} (char input)
+\item 
+void \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a05e12c61b78e3c0453b0dfe4bb365675}{Loot}} (\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}} obj)
+\item 
+void \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a02f7e46c7962ef6a353aba88850da144}{Display\+Weapons}} ()
+\item 
+void \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a9c2c431c4ee1619b722a9bcb71424f88}{Recieve\+Hit}} (\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_positive_1_1_positive_number}{Positive\+Number}} Int)
+\item 
+bool \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a4f90dcebd8255ad43b50b31c5266667e}{Is\+Dead}} ()
+\item 
+void \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_aaeb551227a4f292c9e27a9199bbcec20}{Attach\+Observer}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_observer}{IObserver}} observer)
+\item 
+void \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a8e6d14096e070b97d853ad70e1f022f1}{Detach\+Observer}} (\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_observer}{IObserver}} observer)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a0dcc24678ec06af15cfdb47299614629}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a5d24009cdcbc90ba3241b59a914e28ed}{Hit\+Points}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_aaeb551227a4f292c9e27a9199bbcec20}\index{Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}!AttachObserver@{AttachObserver}}
+\index{AttachObserver@{AttachObserver}!Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}}
+\doxysubsubsection{\texorpdfstring{AttachObserver()}{AttachObserver()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_aaeb551227a4f292c9e27a9199bbcec20} 
+void Mandatory2\+DGame\+Framework.\+Interface.\+ICreature.\+Attach\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_observer}{IObserver}}}]{observer}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_animals_af6b4c8db3313cc7fdc71bfaafbac142e}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Animals}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ac78b3173a0b8ae82cb6c0c236dfd00f0}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_civilian_a6d6563a4059f310d78482238c71f55a2}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Civilian}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_enemy_a4a1aa32ccb988f2ed077b74148bfab23}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Enemy}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a8e6d14096e070b97d853ad70e1f022f1}\index{Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}!DetachObserver@{DetachObserver}}
+\index{DetachObserver@{DetachObserver}!Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}}
+\doxysubsubsection{\texorpdfstring{DetachObserver()}{DetachObserver()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a8e6d14096e070b97d853ad70e1f022f1} 
+void Mandatory2\+DGame\+Framework.\+Interface.\+ICreature.\+Detach\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_observer}{IObserver}}}]{observer}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_animals_acb9ee48e7dc00e8e764f8439f899b058}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Animals}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a89f68d20fe0a27525e1499dd65f12f6f}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_civilian_adcecd9fecda6387c855648280bb6e915}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Civilian}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_enemy_ad9bb04663901a2f6fca8e1bdd25fc94d}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Enemy}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a02f7e46c7962ef6a353aba88850da144}\index{Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}!DisplayWeapons@{DisplayWeapons}}
+\index{DisplayWeapons@{DisplayWeapons}!Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}}
+\doxysubsubsection{\texorpdfstring{DisplayWeapons()}{DisplayWeapons()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a02f7e46c7962ef6a353aba88850da144} 
+void Mandatory2\+DGame\+Framework.\+Interface.\+ICreature.\+Display\+Weapons (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_animals_a7f6459870ef74799d95d8c1d8bb816b6}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Animals}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab691f931bea04cf99d387b3a8dc87497}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_civilian_a21fd50a75da8a98ec01ebcaa3c177c62}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Civilian}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_enemy_a6affb4370ba381315e3d401af3bcc622}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Enemy}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a4f90dcebd8255ad43b50b31c5266667e}\index{Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}!IsDead@{IsDead}}
+\index{IsDead@{IsDead}!Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}}
+\doxysubsubsection{\texorpdfstring{IsDead()}{IsDead()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a4f90dcebd8255ad43b50b31c5266667e} 
+bool Mandatory2\+DGame\+Framework.\+Interface.\+ICreature.\+Is\+Dead (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_animals_a3414fe462e2b211faa4b3390c3c82034}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Animals}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a5ae98a2c7c181d487b357844a1ebd3a4}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_civilian_aa594b9c2e51f75867c174f009e709c54}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Civilian}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_enemy_a46072b4e90a20f59860dcdd1428c22b4}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Enemy}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a05e12c61b78e3c0453b0dfe4bb365675}\index{Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}!Loot@{Loot}}
+\index{Loot@{Loot}!Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}}
+\doxysubsubsection{\texorpdfstring{Loot()}{Loot()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a05e12c61b78e3c0453b0dfe4bb365675} 
+void Mandatory2\+DGame\+Framework.\+Interface.\+ICreature.\+Loot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1worlds_1_1_world_object}{World\+Object}}}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_animals_a7abd489b1c6ff0a90cafcd5beb9a5280}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Animals}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a6eeb83c629f84cbed0bca6b2e56176d2}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_civilian_a7f5edbecbfd52a11e6b0b6ceb7bd086a}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Civilian}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_enemy_a01bf5acb0fcb7f14176e0f8a3f4b3922}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Enemy}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a33b24495a2a1b2e10a62811bf4d0b52d}\index{Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}!Move@{Move}}
+\index{Move@{Move}!Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a33b24495a2a1b2e10a62811bf4d0b52d} 
+void Mandatory2\+DGame\+Framework.\+Interface.\+ICreature.\+Move (\begin{DoxyParamCaption}\item[{char}]{input}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_animals_a21c063dba9fff38a8f56746db8628e50}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Animals}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_af2004cc6233ee36b90a8b019ad572808}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_civilian_a18f4e8a40cd282c416b84ebe796124c5}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Civilian}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_enemy_abb6947a71343a1847bd6c373e6519b68}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Enemy}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a9c2c431c4ee1619b722a9bcb71424f88}\index{Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}!RecieveHit@{RecieveHit}}
+\index{RecieveHit@{RecieveHit}!Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}}
+\doxysubsubsection{\texorpdfstring{RecieveHit()}{RecieveHit()}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a9c2c431c4ee1619b722a9bcb71424f88} 
+void Mandatory2\+DGame\+Framework.\+Interface.\+ICreature.\+Recieve\+Hit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mandatory2_d_game_framework_1_1_positive_1_1_positive_number}{Positive\+Number}}}]{Int}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_animals_af9a10fd23d7552d600a10644c91907c2}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Animals}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_a8925c01c5f9db9efe5a1031564db0ade}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_civilian_aa1f35beec1f9288b98dbaae5c9d5b4a1}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Civilian}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_enemy_ae9c6d3b611279f1e25caf6a3a8e84463}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Enemy}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a5d24009cdcbc90ba3241b59a914e28ed}\index{Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}!HitPoints@{HitPoints}}
+\index{HitPoints@{HitPoints}!Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}}
+\doxysubsubsection{\texorpdfstring{HitPoints}{HitPoints}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a5d24009cdcbc90ba3241b59a914e28ed} 
+int Mandatory2\+DGame\+Framework.\+Interface.\+ICreature.\+Hit\+Points\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_animals_a67e244466686757e84a76d7e8a2bc1f0}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Animals}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_af9616ca77702c6ec73ede9bd55de0968}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_civilian_ac6006194f38d4f49d27dd36c16b1fe6e}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Civilian}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_enemy_adf74517e10c52f3a2ab5bf03c966f288}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Enemy}}.
+
+\Hypertarget{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a0dcc24678ec06af15cfdb47299614629}\index{Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}!Name@{Name}}
+\index{Name@{Name}!Mandatory2DGameFramework.Interface.ICreature@{Mandatory2DGameFramework.Interface.ICreature}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{interface_mandatory2_d_game_framework_1_1_interface_1_1_i_creature_a0dcc24678ec06af15cfdb47299614629} 
+string Mandatory2\+DGame\+Framework.\+Interface.\+ICreature.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_animals_a4e6a93088b36d709abd1fe9900ee9d6b}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Animals}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_army_ab459e097c52ddb4fe838a24022242e77}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Army}}, \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_civilian_ab2170228a6cc40dedba1b6ceda044d91}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Civilian}}, and \mbox{\hyperlink{class_mandatory2_d_game_framework_1_1model_1_1_cretures_1_1_enemy_a29497f2688f6a4259f12ccad98e03ae5}{Mandatory2\+DGame\+Framework.\+model.\+Cretures.\+Enemy}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Interface/\mbox{\hyperlink{_i_creature_8cs}{ICreature.\+cs}}\end{DoxyCompactItemize}
