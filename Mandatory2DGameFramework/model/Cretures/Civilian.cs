@@ -13,6 +13,9 @@ namespace Mandatory2DGameFramework.model.Cretures
     public class Civilian : ICreature
 
     {
+        /// <summary>
+        /// The position of the civilian
+        /// </summary>
         IPosition Position;
 
         public Civilian(IPosition position)
